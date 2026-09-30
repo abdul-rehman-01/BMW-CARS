@@ -1,0 +1,6 @@
+{
+  "name": "BMW Official Experience | The Ultimate Driving Machine",
+  "description": "Experience performance, luxury, and innovation with the official BMW digital showroom. Explore models, build your custom vehicle, compare specifications, and book test drives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

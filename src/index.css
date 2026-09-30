@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bmw-blue: #1c69d4;
+  --color-bmw-blue-hover: #0053b8;
+  --color-bmw-dark: #080a0c;
+  --color-bmw-navy: #0f141c;
+  --color-bmw-card: #131821;
+  --color-bmw-border: #272d37;
+  --color-bmw-gray: #8f9cae;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Cabinet Grotesk", "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: #272d37;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: #080a0c;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(8, 10, 12, 0.4) 0%, rgba(8, 10, 12, 0.1) 40%, rgba(8, 10, 12, 0.85) 85%, #080a0c 100%);
+}
+
+.card-zoom:hover .car-img {
+  transform: scale(1.04);
+}
+
+.car-img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #0f141c;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #2a3442;
+  border-radius: 3px;
+}
